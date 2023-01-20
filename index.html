@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"><title>Formulier</title>
+</head>
+<body>
+<input type="text" maxlength="4" name="adres" placeholder="Straatnaam en huisnummer">
+<input type="text" value="RABO" name="rekeningnummer" maxlength="9">
+<input type="submit" value="verzenden">
+<button type="submit" name="Verzendknop"><strong>Verzend</strong></button>
+<button name="knop" value="accepteer voorwaarden">sdf</button>
+<input type="number" name="cijfer" min="1" max="4" step="4" value="selecteren">
+<input type="email" name="email" placeholder="e-mailadres">
+<br>
+<br>
+<br>
+<br>
+        <form method="post" name="gegevens" action="bewaarInformatie.php">
+
+            <table width=800" border="0">
+                <tbody>
+                    <tr>
+                        <td width="160"><b>Uw adres</b></td>
+                        <td width="480"><input type="text" name="adres1" placeholder="Straatnaam en huisnummer"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Uw leeftijd</b></td>
+                        <td><input type="number" name="leeftijd1" min="1" max="100"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Uw wachtwoord</b></td>
+                        <td><input type="password" name="wachtwoord"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Uw e-mailadres</b></td>
+                        <td><input type="email" name="emailadres"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Uw webpagina</b></td>
+                        <td><input type="url" name="webadres"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Uw telefoonnummer</b></td>
+                        <td><input type="tel" name="telefoonnummer"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Uw geboortedatum</b></td>
+                        <td><input type="date" name="datum" max="2080-12-31"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Uw geslacht</b></td>
+                        <td>
+                            <input type="radio" name="geslacht" value="man" checked>Man
+                            <input type="radio" name="geslacht" value="vrouw">Vrouw
+                            <input type="radio" name="geslacht" value="anders">Anders
+                        </td>
+                    <tr>
+                    <tr>
+                        <td><b> Selecteer minimaal een van de aangeboden onderwerpen </b></td>
+                        <td>
+                            <input type="checkbox" name="onderwerpen" value="Sport">Sport
+                            <input type="checkbox" name="onderwerpen" value="Gezondheid">Gezondheid
+                            <input type="checkbox" name="onderwerpen" value="Kunst">Kunst
+                            <input type="checkbox" name="onderwerpen" value="Politiek">Politiek
+                            <input type="checkbox" name="onderwerpen" value="Weer">Weer
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Selecteer uw bestand</b></td>
+                        <td><input type="file" name="document"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Selecteer uw land</b></td>
+                        <td><select name="land">
+                            <option value="nl">Nederland</option>
+                            <option value="be" selected>België</option>
+                            <option value="de">Duitsland</option>
+                            <option value="fr">Frankrijk</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Schrijf uw boodschap</b></td><br>
+                        <td><textarea name ="bericht" maxlength ="1500"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><button type="submit" name="verzendknop">
+                        <strong>Verzend</strong></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <fieldset>
+            <legend>Persoonlijke gegevens</legend>
+            <label for="naam">Naam:</label>
+            <input id="naam" type="text" name="naam">
+            <br>
+            <br>
+            <label for="adres">Adres:</label>
+            <input type="text" id="adres" name="adres">
+        </fieldset>
+        <br>
+        <br>
+            <h1>Contactformulier</h1>
+            <form id="contactform" action="https://formspree.io/f/mdovnrbq" method="post">
+                <input type="text" name="name" placeholder="Uw naam">
+            <br>
+            <br>
+                <input type="email" name="_replyto" placeholder="Uw email">
+            <br>
+            <br>
+                <input type="hidden" name="_subject" value="Website contact"/>
+                <textarea name="message" placeholder="Uw bericht">
+                </textarea>
+            <br>
+            <br>
+                <input type="text" name="_gotcha" style="display:none"/>
+                <input type="submit" value="Verzend">
+            <br>
+        </form>
+
+
+
+
+<!--Vanaf hier komt de praktijk opgave-->
+
+        <h1>Inschrijf formulier</h1>
+            <form>
+                <fieldset>
+                <legend>Contact gegevens</legend>
+                    <label for="voornaam">Voornaam</label>
+                    <input id="voornaam" type="text" name="voornaam">
+                    <br><br>
+                    <label for="tussenvoegsels">Tussenvoegsels</label>
+                    <input id="tussenvoegsels" type="text" name="tussenvoegsels">
+                    <br><br>
+                    <label for="achternaam">Achternaam</label>
+                    <input id="achternaam" type="text" name="achternaamp">
+                    <br><br>
+                    <input type="radio" name="geslacht" value="man" checked>Man
+                    <input type="radio" name="geslacht" value="vrouw">Vrouw
+                    <input type="radio" name="geslacht" value="anders">Anders
+                    <label for="adres">Adres</label>
+                    <input id="adres" type="text" name="adres">
+                    <br><br>
+                    <label for="postcode">Postcode</label>
+                    <input id="postcode" type="text" name="postcode">
+                    <br><br>
+                    <label for="woonplaats">woonplaats</label>
+                    <input id="woonplaats" type="text" name="woonplaats">
+                    <br><br>
+                    <label for="profielfoto">Profielfoto</label>
+                    <input id="profielfoto" type="file" name="profielfoto">
+                </fieldset>
+                <fieldset>
+                    <legend>Inschrijvingsinformatie</legend>
+                    <input type="checkbox" name="cursus" value="webdesign"> Webdesign
+                    <input type="checkbox" name="cursus" value="python"> Python
+                    <input type="checkbox" name="cursus" value="javascipt"> Javascipt 
+                    <br><br>
+                    <b>Selecteer uw hoogst genoten opleiding</b>
+                    <br><br>
+                    <select name="opleiding">
+                        <option value="geen">Geen</option>
+                        <option value="mbo" selected>middelbaar Onderwijs</option>
+                        <option value="hbo">Hoger Beroepsonderwijs</option>
+                        <option value="geen">Wetenschappelijk Onderwijs</option>
+                    </select>
+                    <br><br>
+                    <b>Gewenste startdatum</b>
+                    <input type="date" name="startdatum" max="2080-12-31">
+                    <br><br>
+                </fieldset>
+                <br>
+                <input type="submit" value="verzend">
+            </form>
+    </body>
+</html>
